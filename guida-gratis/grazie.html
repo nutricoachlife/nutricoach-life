@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grazie! Controlla la tua email | NUTRI by Luciano Mattioli</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F0E4;
+    --ink:#20201B;
+    --ink-soft:#4A473E;
+    --navy:#0F2038;
+    --forest:#1E4432;
+    --forest-2:#16321F;
+    --gold:#A8822E;
+    --gold-light:#D8C08C;
+    --line:rgba(32,32,27,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    padding:24px;
+  }
+  .card{
+    max-width:520px;
+    width:100%;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:48px 40px;
+    text-align:center;
+    box-shadow:0 30px 60px -30px rgba(15,32,56,.25);
+  }
+  .check{
+    width:56px;height:56px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:var(--forest);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .check svg{width:26px;height:26px;stroke:#fff;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:clamp(26px,4vw,32px);
+    color:var(--navy);
+    margin:0 0 14px;
+  }
+  p{color:var(--ink-soft);font-size:16px;margin:0 0 8px;}
+  .steps{
+    text-align:left;
+    margin:28px 0;
+    padding:22px 24px;
+    background:var(--cream);
+    border-radius:14px;
+    border:1px solid var(--line);
+  }
+  .steps p{font-size:13px;font-weight:600;color:var(--forest);margin:0 0 12px;letter-spacing:.02em;}
+  .steps ol{margin:0;padding-left:20px;color:var(--ink-soft);font-size:14.5px;}
+  .steps li{margin-bottom:8px;}
+  .steps li:last-child{margin-bottom:0;}
+  .btn{
+    display:inline-flex;
+    margin-top:10px;
+    background:var(--gold);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:14px 28px;
+    border-radius:999px;
+    transition:background .18s ease;
+  }
+  .btn:hover{background:#8f6e26;}
+  footer{margin-top:28px;font-size:13px;color:var(--ink-soft);}
+  footer strong{color:var(--navy);}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h1>Controlla la tua email</h1>
+    <p>Ti abbiamo appena inviato la Guida Gratis all'indirizzo che ci hai lasciato.</p>
+    <p>Se non la vedi entro qualche minuto, controlla anche in spam o promozioni.</p>
+
+    <div class="steps">
+      <p>Cosa succede adesso</p>
+      <ol>
+        <li>Apri l'email da NUTRI by Luciano Mattioli e conferma l'iscrizione, se richiesto.</li>
+        <li>Leggi la guida con calma: è pensata per essere applicata da subito, un passo alla volta.</li>
+        <li>Nei prossimi giorni ti scriverò con altri contenuti su nutrizione, mindset e libertà economica.</li>
+      </ol>
+    </div>
+
+    <a href="https://nutricoach.life" class="btn">Torna al sito</a>
+
+    <footer>
+      <strong>Luciano e Marisa</strong><br>
+      Team A70 — Uniti Si Vince
+    </footer>
+  </div>
+</body>
+</html>
