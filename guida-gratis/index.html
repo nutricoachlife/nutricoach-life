@@ -3,447 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guida Gratis — È davvero questa la vita che vuoi? | NUTRI by Luciano Mattioli</title>
-<meta name="description" content="Scopri la Guida Gratis di Luciano Mattioli, Chef della Nutrizione e Life Coach: nutrizione consapevole, benessere emotivo e libertà economica.">
+<title>Guida Gratis — 5 Priorità che cambiano la vita | NUTRI by Luciano Mattioli</title>
+<meta name="description" content="Scarica gratis la Guida di Luciano Mattioli: 5 Priorità che cambiano la vita. Un percorso concreto per ritrovare tempo, energia e libertà. Consegna immediata via email.">
+<meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.png">
 <style>
-  :root{
-    --cream:#F6F0E4;
-    --cream-2:#EFE6D4;
-    --ink:#20201B;
-    --ink-soft:#4A473E;
-    --navy:#0F2038;
-    --forest:#1E4432;
-    --forest-2:#16321F;
-    --gold:#A8822E;
-    --gold-light:#D8C08C;
-    --white:#FFFFFF;
-    --line:rgba(32,32,27,0.12);
-    --radius:18px;
-    --maxw:1120px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--cream);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    font-size:16px;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  img,video{max-width:100%;display:block;}
-  a{color:inherit;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
-  h1,h2,h3{font-family:'Fraunces',serif;color:var(--navy);margin:0;font-weight:500;}
-  .eyebrow{
-    font-family:'Inter',sans-serif;
-    font-size:13px;
-    letter-spacing:.02em;
-    color:var(--forest);
-    font-weight:600;
-    margin:0 0 14px;
-  }
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:var(--forest);
-    color:var(--white);
-    border:none;
-    padding:15px 30px;
-    border-radius:999px;
-    font-family:'Inter',sans-serif;
-    font-weight:600;
-    font-size:15.5px;
-    cursor:pointer;
-    text-decoration:none;
-    transition:transform .18s ease, background .18s ease;
-  }
-  .btn:hover{background:var(--forest-2);transform:translateY(-1px);}
-  .btn:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px;}
-  .btn-gold{background:var(--gold);}
-  .btn-gold:hover{background:#8f6e26;}
-
-  /* ---------- NAV ---------- */
-  header.site{
-    position:sticky;top:0;z-index:40;
-    background:rgba(246,240,228,0.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
-  .logo{font-family:'Fraunces',serif;font-size:20px;color:var(--navy);letter-spacing:.02em;}
-  .logo span{color:var(--forest);}
-  .nav .btn{padding:10px 22px;font-size:14px;}
-
-  /* ---------- HERO ---------- */
-  .hero{padding:64px 0 40px;}
-  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
-  .hero h1{font-size:clamp(32px,4.2vw,50px);line-height:1.12;}
-  .hero p.lead{font-size:18px;color:var(--ink-soft);max-width:44ch;margin:22px 0 30px;}
-  .hero-cta-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
-  .hero-note{font-size:13.5px;color:var(--ink-soft);}
-
-  .video-frame{
-    position:relative;
-    border:1px solid var(--gold-light);
-    border-radius:26px;
-    padding:14px;
-    background:var(--white);
-    box-shadow:0 30px 60px -30px rgba(15,32,56,.35);
-    max-width:340px;
-    margin:0 auto;
-  }
-  .video-frame video{
-    width:100%;
-    border-radius:16px;
-    aspect-ratio:9/16;
-    background:#000;
-    object-fit:cover;
-  }
-  .video-frame .tag{
-    position:absolute;
-    top:-14px;left:28px;
-    background:var(--gold);
-    color:#fff;
-    font-size:12.5px;
-    font-weight:600;
-    padding:6px 14px;
-    border-radius:999px;
-    box-shadow:0 6px 14px rgba(168,130,46,.35);
-  }
-
-  /* ---------- PILLARS ---------- */
-  .pillars{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0;}
-  .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
-  .pillar{padding-top:22px;border-top:2px solid var(--gold);}
-  .pillar h3{font-size:21px;margin-bottom:10px;}
-  .pillar p{margin:0;color:var(--ink-soft);font-size:15px;}
-
-  /* ---------- BIO ---------- */
-  .bio{padding:80px 0;}
-  .bio-grid{display:grid;grid-template-columns:0.55fr 1fr;gap:52px;align-items:center;}
-  .bio-photo{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
-  .bio h2{font-size:clamp(26px,3vw,34px);margin-bottom:18px;}
-  .bio blockquote{
-    font-family:'Fraunces',serif;
-    font-style:italic;
-    font-size:19px;
-    color:var(--navy);
-    margin:0 0 20px;
-    padding-left:20px;
-    border-left:3px solid var(--gold);
-  }
-  .bio p{color:var(--ink-soft);margin:0 0 14px;font-size:15.5px;}
-  .credentials{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
-  .credentials span{
-    font-size:13px;
-    background:var(--cream-2);
-    border:1px solid var(--line);
-    padding:7px 14px;
-    border-radius:999px;
-    color:var(--ink-soft);
-  }
-
-  /* ---------- FORM / GUIDA GRATIS ---------- */
-  .capture{
-    background:var(--navy);
-    color:var(--white);
-    padding:80px 0;
-    position:relative;
-    overflow:hidden;
-  }
-  .capture::before{
-    content:"";
-    position:absolute;inset:0;
-    background:radial-gradient(circle at 85% 20%, rgba(168,130,46,.25), transparent 55%);
-    pointer-events:none;
-  }
-  .capture-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;}
-  .capture .eyebrow{color:var(--gold-light);}
-  .capture h2{color:var(--white);font-size:clamp(28px,3.4vw,38px);line-height:1.16;}
-  .capture p.lead{color:rgba(255,255,255,.78);font-size:16.5px;max-width:46ch;margin:18px 0 0;}
-  .capture-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px;}
-  .capture-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,.9);}
-  .capture-list li::before{content:"—";color:var(--gold-light);flex-shrink:0;}
-
-  .privacy-note{font-size:12px;color:var(--ink-soft);margin-top:14px;text-align:center;}
-
-  /* ---------- FOOTER ---------- */
-  footer{padding:44px 0;background:var(--forest-2);color:rgba(255,255,255,.75);}
-  .footer-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;}
-  footer .logo{color:#fff;}
-  footer .logo span{color:var(--gold-light);}
-  footer .team{font-size:13.5px;text-align:right;}
-  footer .team strong{color:#fff;display:block;font-weight:600;}
-
-  @media (max-width:860px){
-    .hero-grid{grid-template-columns:1fr;gap:36px;}
-    .hero{padding:40px 0 8px;text-align:left;}
-    .video-frame{order:-1;max-width:280px;}
-    .pillars-grid{grid-template-columns:1fr;gap:28px;}
-    .bio-grid{grid-template-columns:1fr;}
-    .bio-photo{max-width:280px;}
-    .capture-grid{grid-template-columns:1fr;gap:38px;}
-    .footer-grid{flex-direction:column;align-items:flex-start;text-align:left;}
-    footer .team{text-align:left;}
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    .btn{transition:none;}
-    html{scroll-behavior:auto;}
-  }
+:root{--cream:#F6F0E4;--ink:#20201B;--ink-soft:#4A473E;--navy:#0F2038;--navy-2:#132844;--forest:#1E4432;--gold:#A8822E;--gold-light:#D8C08C;--white:#FFFFFF;--line:rgba(32,32,27,0.12);--radius:18px;--maxw:1120px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.nav{padding:22px 24px;background:transparent;position:absolute;top:0;left:0;right:0;z-index:10}
+.nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--cream);display:flex;align-items:center;gap:10px}
+.brand .logo{width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px}
+.nav-badge{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);font-weight:600;padding:8px 16px;border:1px solid rgba(216,192,140,.4);border-radius:999px}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:var(--cream);padding:100px 24px 90px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(216,192,140,.08) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center;position:relative}
+@media(max-width:820px){.hero-inner{grid-template-columns:1fr;text-align:center}}
+.eyebrow{color:var(--gold-light);text-transform:uppercase;letter-spacing:.24em;font-size:12px;font-weight:600;margin-bottom:22px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(38px,5.5vw,64px);font-weight:500;line-height:1.05;letter-spacing:-.012em;margin-bottom:26px}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero p.lead{font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.6;color:rgba(246,240,228,.88);max-width:540px;margin-bottom:32px}
+@media(max-width:820px){.hero p.lead{margin-left:auto;margin-right:auto}}
+.hero-features{list-style:none;padding:0;margin:0}
+.hero-features li{display:flex;align-items:flex-start;gap:14px;padding:10px 0;color:rgba(246,240,228,.9);font-size:15.5px}
+.hero-features .tick{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:2px}
+.cover-wrap{position:relative;perspective:1200px;padding:20px}
+.cover-shadow{position:absolute;bottom:-20px;left:20px;right:20px;height:60px;background:radial-gradient(ellipse,rgba(0,0,0,.5) 0%,transparent 65%);filter:blur(15px);z-index:0}
+.cover-img{position:relative;z-index:1;border-radius:8px;box-shadow:0 25px 70px rgba(0,0,0,.5),0 8px 25px rgba(0,0,0,.3);transform:rotateY(-4deg) rotateX(2deg);transition:transform .5s ease}
+.cover-img:hover{transform:rotateY(0) rotateX(0)}
+.cover-badge{position:absolute;top:0;right:0;background:var(--gold);color:var(--white);font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.15em;padding:10px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35);z-index:2}
+.section{padding:clamp(72px,10vw,110px) 24px}
+.section-inner{max-width:var(--maxw);margin:0 auto}
+.section-cream{background:var(--cream);color:var(--ink)}
+.section-white{background:var(--white)}
+.section-tag{display:inline-block;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:600;margin-bottom:18px}
+.section h2{font-family:'Fraunces',serif;font-size:clamp(30px,4.4vw,46px);font-weight:500;line-height:1.16;color:var(--navy);margin-bottom:24px;max-width:820px}
+.section h2 em{font-style:italic;color:var(--gold)}
+.section p{font-size:clamp(15.5px,1.7vw,17.5px);line-height:1.72;color:var(--ink-soft);max-width:720px;margin-bottom:18px}
+.who-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:center}
+@media(max-width:820px){.who-grid{grid-template-columns:1fr;gap:40px}}
+.who-photo{border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(15,32,56,.15);aspect-ratio:4/5}
+.who-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.who-signature{margin-top:30px;font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:22px}
+.priorities{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.priorities li{background:var(--white);padding:24px 22px;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 6px 24px rgba(15,32,56,.06);display:flex;gap:14px;align-items:flex-start}
+.priorities .num{font-family:'Fraunces',serif;font-size:28px;color:var(--gold);font-weight:600;line-height:1;min-width:28px}
+.priorities .text{font-size:15.5px;line-height:1.5;color:var(--ink);font-weight:500}
+.form-section{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:var(--cream);padding:clamp(80px,10vw,120px) 24px}
+.form-inner{max-width:640px;margin:0 auto;text-align:center}
+.form-inner h2{color:var(--cream);font-size:clamp(32px,4.8vw,48px);margin-bottom:18px}
+.form-inner h2 em{color:var(--gold-light)}
+.form-inner .subhead{color:rgba(246,240,228,.82);font-size:17px;line-height:1.62;margin-bottom:36px}
+.form-card{background:var(--white);color:var(--ink);padding:44px 40px;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);text-align:left}
+.form-card label{display:block;font-size:13.5px;font-weight:600;color:var(--navy);letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;margin-top:16px}
+.form-card label:first-of-type{margin-top:0}
+.form-card input,.form-card select{width:100%;padding:14px 16px;font-size:15px;font-family:'Inter',sans-serif;border:1.5px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink);transition:border-color .18s}
+.form-card input:focus,.form-card select:focus{outline:none;border-color:var(--gold)}
+.form-card .priorita-group{display:grid;gap:10px;margin-top:6px}
+.form-card .priorita-group label{display:flex;align-items:center;gap:12px;padding:13px 16px;background:var(--cream);border:1.5px solid var(--line);border-radius:10px;cursor:pointer;transition:border-color .18s,background .18s;font-size:14.5px;font-weight:500;color:var(--ink);text-transform:none;letter-spacing:0;margin:0}
+.form-card .priorita-group label:hover{border-color:var(--gold)}
+.form-card .priorita-group input[type=radio]{width:auto;margin:0;accent-color:var(--gold)}
+.form-card .btn-submit{width:100%;margin-top:28px;padding:18px;background:var(--gold);color:var(--white);border:none;border-radius:999px;font-size:16px;font-weight:700;letter-spacing:.02em;cursor:pointer;transition:transform .2s,background .2s;font-family:'Inter',sans-serif}
+.form-card .btn-submit:hover{background:var(--navy);transform:translateY(-1px)}
+.form-note{text-align:center;font-size:13px;color:rgba(246,240,228,.65);margin-top:22px}
+footer{background:#0A1626;color:rgba(246,240,228,.72);padding:52px 24px 40px;text-align:center;font-size:13.5px}
+footer strong{color:var(--gold-light);display:block;font-family:'Fraunces',serif;font-size:16px;margin-bottom:6px;letter-spacing:.02em;font-weight:500}
+footer a{color:var(--gold-light)}
 </style>
 </head>
 <body>
-
-<header class="site">
-  <div class="nav">
-    <div class="logo">NUTRI <span>by Luciano Mattioli</span></div>
-    <a href="#guida" class="btn">Guida Gratis</a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand"><span class="logo">L</span> Luciano Mattioli</a>
+    <span class="nav-badge">🎁 Guida gratuita</span>
   </div>
-</header>
-
+</nav>
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">Chef della Nutrizione · Life Coach</p>
-      <h1>È davvero questa la vita che vuoi?</h1>
-      <p class="lead">Se la risposta ti ha fatto esitare anche solo un secondo, guarda il video: tre passaggi concreti verso un'entrata extra reale, più equilibrio e la libertà di essere ciò che sei davvero.</p>
-      <div class="hero-cta-row">
-        <a href="#guida" class="btn btn-gold">Scarica la Guida Gratis</a>
-        <span class="hero-note">2 minuti di lettura · nessun impegno</span>
-      </div>
-    </div>
-    <div class="video-frame">
-      <span class="tag">Guarda ora</span>
-      <video controls preload="metadata" poster="assets/poster.jpg" playsinline>
-        <source src="assets/video.mp4" type="video/mp4">
-        Il tuo browser non supporta il video. <a href="assets/video.mp4">Scaricalo qui</a>.
-      </video>
-    </div>
-  </div>
-</section>
-
-<section class="pillars">
-  <div class="wrap pillars-grid">
-    <div class="pillar">
-      <h3>Nutrizione consapevole</h3>
-      <p>Il cibo come alleato quotidiano, non come fonte di ansia: abitudini semplici che il corpo ricorda.</p>
-    </div>
-    <div class="pillar">
-      <h3>Benessere emotivo</h3>
-      <p>Mindset e ascolto di sé, per rispondere "sì" quando ti chiedi se questa è davvero la vita che vuoi.</p>
-    </div>
-    <div class="pillar">
-      <h3>Libertà economica</h3>
-      <p>Un'entrata extra reale, costruita con metodo, senza dover rendere conto a nessuno.</p>
-    </div>
-  </div>
-</section>
-
-<section class="bio">
-  <div class="wrap bio-grid">
-    <div class="bio-photo">
-      <img src="assets/luciano.jpg" alt="Luciano Mattioli, Chef della Nutrizione e Life Coach">
-    </div>
-    <div>
-      <p class="eyebrow">Chi ti accompagna</p>
-      <h2>Luciano Mattioli</h2>
-      <blockquote>Da anni aiuto le persone a ritrovare equilibrio tra corpo, mente e libertà economica.</blockquote>
-      <p>Chef della Nutrizione e Life Coach, autore di quattro libri su mindset e crescita personale. Guido insieme a Marisa Penserini il Team A70 — Uniti Si Vince, un gruppo di persone che ha scelto di costruire un'entrata extra reale partendo da abitudini semplici.</p>
-      <div class="credentials">
-        <span>Chef della Nutrizione</span>
-        <span>Life Coach</span>
-        <span>Autore di 4 libri</span>
-        <span>Team A70 — Uniti Si Vince</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="capture" id="guida">
-  <div class="wrap capture-grid">
-    <div>
-      <p class="eyebrow">Guida gratuita</p>
-      <h2>Il primo passo verso la vita che vuoi</h2>
-      <p class="lead">Richiedi la guida gratuita e inizia insieme a me il primo passo: nutrizione, mindset e un metodo concreto per costruire un'entrata extra, senza stravolgere la tua vita.</p>
-      <ul class="capture-list">
-        <li>Le 5 abitudini italiane da conoscere prima di tutto il resto</li>
-        <li>Il metodo del minimo efficace per corpo e mente</li>
-        <li>Come iniziare a costruire un'entrata extra reale</li>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow">La Guida gratuita</div>
+      <h1>5 Priorità <em>che cambiano la vita.</em></h1>
+      <p class="lead">Una guida concreta per riconoscere ciò che desideri davvero e iniziare a costruirlo, un passo alla volta.</p>
+      <ul class="hero-features">
+        <li><span class="tick">✓</span><div>Un percorso strutturato in 5 aree — non chiacchiere motivazionali</div></li>
+        <li><span class="tick">✓</span><div>Ogni priorità con esercizio e piccolo passo concreto</div></li>
+        <li><span class="tick">✓</span><div>Consegna via email in meno di 1 minuto — gratuito, per sempre</div></li>
       </ul>
     </div>
-
-    <div class="form-embed">
-      <style type="text/css">
-        .form-embed * {
-          box-sizing: border-box;
-        }
-        .form-embed .aw-container {
-          max-width: 440px;
-          margin: 0 auto;
-          padding: 36px;
-          font-family: 'Inter', sans-serif;
-          background: #ffffff;
-          border: 1px solid var(--line);
-          border-radius: var(--radius);
-          box-shadow: 0 30px 60px -25px rgba(0,0,0,.5);
-        }
-        .form-embed .aw-heading {
-          margin: 0 0 6px;
-          font-family: 'Fraunces', serif;
-          font-size: 22px;
-          font-weight: 500;
-          color: var(--navy);
-        }
-        .form-embed .aw-subheading {
-          margin: 0 0 22px;
-          font-size: 14.5px;
-          line-height: 1.5;
-          color: var(--ink-soft);
-        }
-        .form-embed .aw-field {
-          margin-bottom: 16px;
-        }
-        .form-embed .aw-label {
-          display: block;
-          margin-bottom: 6px;
-          font-size: 13.5px;
-          font-weight: 600;
-          color: var(--ink);
-        }
-        .form-embed .aw-input {
-          display: block;
-          width: 100%;
-          padding: 13px 14px;
-          font-size: 15px;
-          color: var(--ink);
-          background: var(--cream);
-          border: 1px solid var(--line);
-          border-radius: 10px;
-          transition: border-color 200ms ease, box-shadow 200ms ease;
-        }
-        .form-embed .aw-input::placeholder {
-          color: #9ca3af;
-        }
-        .form-embed .aw-input:focus {
-          outline: none;
-          border-color: var(--forest);
-          box-shadow: 0 0 0 3px rgba(30,68,50,.18);
-        }
-        .form-embed .aw-button {
-          display: block;
-          width: 100%;
-          margin-top: 6px;
-          padding: 15px 24px;
-          font-family: 'Inter', sans-serif;
-          font-size: 15.5px;
-          font-weight: 600;
-          color: #ffffff;
-          background: var(--gold);
-          border: none;
-          border-radius: 999px;
-          cursor: pointer;
-          transition: background 180ms ease, transform 180ms ease;
-        }
-        .form-embed .aw-button:hover {
-          background: #8f6e26;
-          transform: translateY(-1px);
-        }
-        .form-embed .aw-button:focus-visible {
-          outline: 3px solid var(--gold-light);
-          outline-offset: 3px;
-        }
-        .form-embed .aw-radio-group {
-          display: grid;
-          gap: 8px;
-        }
-        .form-embed .aw-radio {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 10px 12px;
-          border: 1px solid var(--line);
-          border-radius: 10px;
-          background: var(--cream);
-          font-size: 14px;
-          color: var(--ink);
-          cursor: pointer;
-          transition: border-color 150ms ease;
-        }
-        .form-embed .aw-radio:has(input:checked) {
-          border-color: var(--forest);
-        }
-        .form-embed .aw-radio input {
-          accent-color: var(--forest);
-          width: 16px;
-          height: 16px;
-          flex-shrink: 0;
-        }
-      </style>
-      <div class="aw-container">
-        <form method="post" action="https://nutricoach365.optin.com/scripts/addlead.pl">
-          <h2 class="aw-heading">Scarica la Guida Gratis</h2>
-          <p class="aw-subheading">Inserisci i tuoi dati e ricevi subito la guida gratuita nella tua email.</p>
-          <div class="aw-field">
-            <label for="aw-name" class="aw-label">Nome</label>
-            <input id="aw-name" type="text" name="name" autocomplete="name" placeholder="Il tuo nome" required class="aw-input" />
-          </div>
-          <div class="aw-field">
-            <label for="aw-email" class="aw-label">Email</label>
-            <input id="aw-email" type="email" name="email" autocomplete="email" placeholder="La tua email" required class="aw-input" />
-          </div>
-          <div class="aw-field">
-            <label for="aw-phone" class="aw-label">Cellulare <span style="font-weight:400;color:var(--ink-soft);"></span></label>
-            <input id="aw-phone" type="tel" name="telefono" required autocomplete="tel" placeholder="Il tuo numero di cellulare" class="aw-input" />
-          </div>
-          <div class="aw-field">
-            <label class="aw-label">Qual è la tua priorità principale in questo momento?</label>
-            <div class="aw-radio-group">
-              <label class="aw-radio"><input type="radio" name="priorita" value="Equilibrio vita-lavoro" required> Equilibrio vita-lavoro</label>
-              <label class="aw-radio"><input type="radio" name="priorita" value="Piu soldi" required> Più soldi</label>
-              <label class="aw-radio"><input type="radio" name="priorita" value="Lavorare per te stesso" required> Lavorare per te stesso</label>
-              <label class="aw-radio"><input type="radio" name="priorita" value="Flessibilita" required> Flessibilità</label>
-              <label class="aw-radio"><input type="radio" name="priorita" value="Liberta personale" required> Libertà personale</label>
-            </div>
-          </div>
-          <button type="submit" data-aw-action="submit-form" data-aw-state="idle" class="aw-button">Ricevi la Guida Gratis</button>
-          <input type="hidden" name="listname" value="awlist6974053" />
-          <input type="hidden" name="meta_web_form_id" value="47576147" />
-          <input type="hidden" name="redirect" value="https://nutricoach.life/guida-gratis/grazie.html" />
-          <input type="hidden" name="meta_tags" data-aw-action="referrer-tag" value="" />
-          <input type="hidden" name="meta_adtracking" value="" />
-          <div style="display: none">
-            <img src="https://nutricoach365.optin.com/forms/displays.htm?id=LOys7GyMLOw=" alt="" />
-          </div>
-        </form>
-        <script>
-          (function () {
-            var root = window.__awFormRoot || document;
-            var tag = root.querySelector('[data-aw-action="referrer-tag"]');
-            if (tag) tag.value = "referrer_" + (document.referrer || "direct");
-          })();
-        </script>
-      </div>
-      <p class="privacy-note">Iscrivendoti accetti di ricevere email da NUTRI by Luciano Mattioli.</p>
+    <div class="cover-wrap">
+      <div class="cover-badge">GRATUITO · PDF</div>
+      <div class="cover-shadow"></div>
+      <img src="assets/guide-cover.jpg" alt="Copertina — 5 Priorità che cambiano la vita" class="cover-img">
     </div>
   </div>
 </section>
-
-<footer>
-  <div class="wrap footer-grid">
-    <div class="logo">NUTRI <span>by Luciano Mattioli</span></div>
-    <div class="team">
-      <strong>Luciano e Marisa</strong>
-      Team A70 — Uniti Si Vince
+<section class="section section-cream">
+  <div class="section-inner">
+    <div class="who-grid">
+      <div class="who-photo">
+        <img src="/assets/luciano.jpg" alt="Luciano Mattioli — Chef della Nutrizione e Life Coach">
+      </div>
+      <div>
+        <div class="section-tag">Chi ti accompagna</div>
+        <h2>Luciano <em>Mattioli</em></h2>
+        <p>Chef della Nutrizione, Life Coach e autore di 4 libri su mindset e crescita personale. Da 25 anni accompagno persone come te a costruire una vita più libera — con più tempo, più energia, più senso.</p>
+        <p>Ho scritto questa Guida partendo dalla mia stessa storia: da chef di cucina, chiuso in cucina a preparare la vita degli altri, a un percorso di libertà che oggi condivido con chi vuole scegliere davvero la propria strada.</p>
+        <div class="who-signature">— Luciano</div>
+      </div>
     </div>
   </div>
+</section>
+<section class="section section-white">
+  <div class="section-inner">
+    <div class="section-tag">Cosa troverai dentro</div>
+    <h2>Le <em>5 priorità</em> concrete che possono cambiare la tua vita.</h2>
+    <p>Non teoria astratta. Cinque aree su cui lavorare adesso, con esempi, esercizi pratici e il primo passo da fare oggi stesso.</p>
+    <ul class="priorities">
+      <li><span class="num">1</span><span class="text">Equilibrio vita-lavoro</span></li>
+      <li><span class="num">2</span><span class="text">Un'entrata extra parallela</span></li>
+      <li><span class="num">3</span><span class="text">Lavorare per te stesso</span></li>
+      <li><span class="num">4</span><span class="text">Flessibilità di tempo</span></li>
+      <li><span class="num">5</span><span class="text">Libertà personale</span></li>
+    </ul>
+  </div>
+</section>
+<section class="form-section" id="guida">
+  <div class="form-inner">
+    <h2>Ricevi la <em>Guida Gratis</em> nella tua email.</h2>
+    <p class="subhead">Compila il modulo — te la invio entro 1 minuto. Niente spam, niente vendite: solo la guida che ti aiuterà a fare chiarezza sulle tue priorità.</p>
+    <div class="form-card">
+      <form action="https://nutricoach365.optin.com/scripts/addlead.pl" method="post">
+        <label for="aw-name">Nome</label>
+        <input id="aw-name" type="text" name="name" autocomplete="name" placeholder="Il tuo nome" required>
+        <label for="aw-email">Email</label>
+        <input id="aw-email" type="email" name="email" autocomplete="email" placeholder="La tua email" required>
+        <label for="aw-phone">Cellulare</label>
+        <input id="aw-phone" type="tel" name="telefono" required autocomplete="tel" placeholder="Il tuo numero di cellulare">
+        <label>Qual è la tua priorità principale in questo momento?</label>
+        <div class="priorita-group">
+          <label><input type="radio" name="priorita" value="Equilibrio vita-lavoro" required><span>Equilibrio vita-lavoro</span></label>
+          <label><input type="radio" name="priorita" value="Piu soldi" required><span>Più soldi</span></label>
+          <label><input type="radio" name="priorita" value="Lavorare per te stesso" required><span>Lavorare per te stesso</span></label>
+          <label><input type="radio" name="priorita" value="Flessibilita" required><span>Flessibilità</span></label>
+          <label><input type="radio" name="priorita" value="Liberta personale" required><span>Libertà personale</span></label>
+        </div>
+        <button type="submit" class="btn-submit">Ricevi la Guida Gratis →</button>
+        <input type="hidden" name="listname" value="awlist6974053">
+        <input type="hidden" name="meta_web_form_id" value="47576147">
+        <input type="hidden" name="redirect" value="https://nutricoach.life/guida-gratis/grazie.html">
+        <input type="hidden" name="meta_tags" value="referrer_direct">
+        <input type="hidden" name="meta_adtracking" value="">
+      </form>
+    </div>
+    <p class="form-note">🔒 I tuoi dati sono al sicuro. Puoi cancellarti in qualsiasi momento.</p>
+  </div>
+</section>
+<footer>
+  <strong>NUTRI by Luciano Mattioli</strong>
+  Chef della Nutrizione — Life Coach<br>
+  Rimini, Italia · <a href="mailto:nutricoach365@gmail.com">nutricoach365@gmail.com</a> · <a href="https://wa.me/393514231261" target="_blank" rel="noopener">WhatsApp</a><br>
+  <span style="opacity:.6;font-size:12px">© 2026 Luciano Mattioli · <a href="/privacy.html">Privacy</a></span>
 </footer>
-
 </body>
 </html>
