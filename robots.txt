@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Pagine private (non indicizzare)
+Disallow: /convegno.html
+Disallow: /grazie.html
+Disallow: /guida-gratis/grazie.html
+
+# Sitemap
+Sitemap: https://nutricoach.life/sitemap.xml
