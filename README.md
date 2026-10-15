@@ -1,2 +1,2 @@
-# nutricoach-life-
-Sito Luciano Mattioli - Team Nutri A70
+# nutricoach-life
+Sito Luciano Mattioli - NUTRI
