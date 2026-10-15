@@ -125,6 +125,18 @@ a{color:inherit;text-decoration:none}
 footer{background:#0A1626;color:rgba(246,240,228,.75);padding:56px 24px 40px;text-align:center;font-size:13.5px}
 footer strong{color:var(--gold-light);display:block;font-family:'Fraunces',serif;font-size:16px;margin-bottom:6px;font-weight:500}
 footer a{color:var(--gold-light)}
+.form-wrap{max-width:640px;margin:56px auto 0;background:var(--white);border-radius:18px;padding:44px 34px;box-shadow:0 10px 40px rgba(15,32,56,.07)}
+.form-wrap h2{font-family:'Fraunces',serif;font-size:28px;color:var(--navy);font-weight:600;margin-bottom:8px;text-align:center}
+.form-wrap .form-intro{color:var(--ink-soft);font-size:15px;text-align:center;margin-bottom:28px}
+.form-wrap label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin:16px 0 6px}
+.form-wrap input,.form-wrap textarea{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--cream);font:inherit;font-size:15px;color:var(--ink)}
+.form-wrap textarea{min-height:130px;resize:vertical}
+.form-wrap .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13.5px;color:var(--ink-soft);margin-top:20px}
+.form-wrap .consent input{width:auto;margin-top:3px}
+.form-wrap .consent a{color:var(--gold);text-decoration:underline}
+.form-wrap button{width:100%;margin-top:24px;padding:16px;background:var(--gold);color:var(--white);border:none;border-radius:999px;font-size:16px;font-weight:700;cursor:pointer}
+.form-wrap button:hover{background:var(--navy)}
+.form-wrap .hp{display:none}
 </style>
 </head>
 <body>
@@ -136,7 +148,6 @@ footer a{color:var(--gold-light)}
       <a href="/chi-sono.html">Chi Sono</a>
       <a href="/percorso.html">Il Percorso</a>
       <a href="/libri.html">Libri</a>
-      <a href="/guida-gratis/">Guida Gratis</a>
       <a href="/contatti.html" class="active">Contatti</a>
     </div>
     <a href="https://calendly.com/nutricoach365/30min" class="nav-cta" target="_blank" rel="noopener">Prenota una call</a>
@@ -147,7 +158,7 @@ footer a{color:var(--gold-light)}
   <div class="hero-inner">
     <div class="eyebrow">Contatti</div>
     <h1>Parliamone. <em>Insieme.</em></h1>
-    <p>Tre modi per iniziare. Scegli quello che ti è più comodo — rispondo personalmente a ogni messaggio entro 24 ore.</p>
+    <p>Quattro modi per iniziare. Scegli quello che ti è più comodo — rispondo personalmente a ogni messaggio entro 24 ore.</p>
   </div>
 </header>
 
@@ -180,6 +191,28 @@ footer a{color:var(--gold-light)}
         <a href="mailto:nutricoach365@gmail.com">Scrivimi</a>
       </article>
 
+    </div>
+
+
+    <div class="form-wrap" id="scrivimi">
+      <h2>Scrivimi qui</h2>
+      <p class="form-intro">Raccontami in poche righe chi sei e cosa ti piacerebbe migliorare. Ti rispondo io, personalmente.</p>
+      <form action="https://formsubmit.co/nutricoach365@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuovo contatto dal sito nutricoach.life">
+        <input type="hidden" name="_next" value="https://nutricoach.life/grazie.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <label for="c-nome">Nome</label>
+        <input id="c-nome" type="text" name="Nome" autocomplete="name" required>
+        <label for="c-email">Email</label>
+        <input id="c-email" type="email" name="email" autocomplete="email" required>
+        <label for="c-tel">Cellulare (facoltativo)</label>
+        <input id="c-tel" type="tel" name="Cellulare" autocomplete="tel">
+        <label for="c-msg">Messaggio</label>
+        <textarea id="c-msg" name="Messaggio" required></textarea>
+        <label class="consent"><input type="checkbox" name="Privacy" value="Accettata" required><span>Ho letto la <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> e acconsento al trattamento dei miei dati per essere ricontattato.</span></label>
+        <button type="submit">Invia il messaggio →</button>
+      </form>
     </div>
 
     <div class="info-card">
