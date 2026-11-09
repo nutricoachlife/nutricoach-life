@@ -98,7 +98,6 @@ footer a{text-decoration:underline}
       <div class="fields">
         <div><label for="nome">Il tuo nome</label><input id="nome" name="nome" type="text" autocomplete="given-name" required></div>
         <div><label for="email">La tua email (ti arriva lì il capitolo)</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
         <label class="consent"><input type="checkbox" id="privacy" required><span>Ho letto la <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> e acconsento a ricevere via email il capitolo gratuito e i contenuti di Luciano Mattioli. Posso disiscrivermi in qualsiasi momento.</span></label>
         <p class="err" id="err" role="alert"></p>
         <button type="submit" id="btn">Inviami il capitolo gratuito →</button>
@@ -152,6 +151,7 @@ const origine = {
   contenuto:qs.get("utm_content")  || ""
 };
 
+const aperta = Date.now();
 const form = document.getElementById("lead");
 const err  = document.getElementById("err");
 const btn  = document.getElementById("btn");
@@ -166,7 +166,7 @@ form.addEventListener("submit", async (e) => {
   if (!nome) { err.textContent = "Scrivi il tuo nome."; return; }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { err.textContent = "Controlla l'indirizzo email."; return; }
   if (!document.getElementById("privacy").checked) { err.textContent = "Serve il consenso per inviarti il capitolo."; return; }
-  if (form._honey.value) return; // bot
+  if (Date.now() - aperta < 2500) { err.textContent = "Un attimo... riprova tra un secondo."; return; } // invio troppo rapido = robot
 
   const dati = {
     nome, email,
