@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Da dove vuoi ripartire? — Luciano Mattioli | NUTRI</title>
+<meta name="description" content="Rispondi a una domanda e ricevi gratis il primo capitolo di «Migliora la Tua Vita Adesso» con i consigli giusti per il tuo obiettivo.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nutricoach.life/inizia.html">
+<meta property="og:title" content="Da dove vuoi ripartire? — Luciano Mattioli">
+<meta property="og:description" content="Una domanda, 30 secondi: ricevi il primo capitolo del mio libro e i consigli giusti per te.">
+<meta property="og:image" content="https://nutricoach.life/assets/luciano.jpg">
+<meta property="og:url" content="https://nutricoach.life/inizia.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F6F0E4;--ink:#20201B;--ink-soft:#4A473E;--navy:#0F2038;--gold:#A8822E;--gold-light:#D8C08C;--white:#FFFFFF;--line:rgba(32,32,27,0.12);--radius:18px;--maxw:1080px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;background:rgba(246,240,228,0.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:100}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:10px}
+.brand .logo{width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px}
+.hero{background:var(--navy);color:var(--cream);padding:72px 24px 120px;text-align:center}
+.hero-inner{max-width:760px;margin:0 auto}
+.eyebrow{color:var(--gold-light);text-transform:uppercase;letter-spacing:.24em;font-size:11.5px;font-weight:600;margin-bottom:18px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(30px,5vw,50px);font-weight:500;line-height:1.1;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero p{margin-top:20px;font-size:17px;line-height:1.62;color:rgba(246,240,228,.85);max-width:580px;margin-left:auto;margin-right:auto}
+.wrap{max-width:720px;margin:-80px auto 0;padding:0 16px 90px}
+.card{background:var(--white);border-radius:var(--radius);padding:clamp(28px,5vw,48px);box-shadow:0 12px 40px rgba(15,32,56,.08)}
+.step{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+.q{font-family:'Fraunces',serif;font-size:clamp(22px,3.4vw,28px);color:var(--navy);font-weight:600;line-height:1.25;margin-bottom:22px}
+.options{display:grid;gap:12px;border:0}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;gap:14px;align-items:center;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;cursor:pointer;transition:border-color .15s,background .15s,transform .15s;font-size:15.5px;color:var(--ink)}
+.opt label:hover{border-color:var(--gold-light);transform:translateY(-1px)}
+.opt .ico{flex:0 0 40px;height:40px;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:19px}
+.opt .t strong{display:block;font-weight:600;color:var(--navy)}
+.opt .t span{font-size:13.5px;color:var(--ink-soft)}
+.opt input:checked + label{border-color:var(--gold);background:#FBF6EA}
+.opt input:checked + label .ico{background:var(--gold);color:var(--white)}
+.opt input:focus-visible + label{outline:3px solid var(--gold-light);outline-offset:2px}
+.fields{margin-top:30px;display:grid;gap:14px}
+.fields label{font-size:13.5px;font-weight:600;color:var(--ink-soft);display:block;margin-bottom:6px}
+.fields input[type=text],.fields input[type=email]{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;font:inherit;font-size:15.5px;background:var(--white);color:var(--ink)}
+.fields input:focus{outline:none;border-color:var(--gold)}
+.fields .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;font-weight:400;color:var(--ink-soft);line-height:1.5;margin:0}
+.consent input{margin-top:3px;accent-color:var(--gold);flex:0 0 auto}
+.consent a{text-decoration:underline}
+.hp{position:absolute;left:-9999px}
+button{margin-top:6px;width:100%;padding:16px 28px;background:var(--gold);color:var(--white);border:0;border-radius:999px;font:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:background .2s}
+button:hover{background:var(--navy)}
+button:disabled{opacity:.6;cursor:wait}
+.err{color:#9B2C2C;font-size:14px;min-height:20px}
+.note{text-align:center;font-size:13px;color:var(--ink-soft);margin-top:14px}
+.thanks{display:none;text-align:center}
+.thanks h2{font-family:'Fraunces',serif;color:var(--navy);font-size:clamp(24px,4vw,32px);font-weight:600;line-height:1.2;margin-bottom:14px}
+.thanks p{color:var(--ink-soft);font-size:16px;line-height:1.7;margin-bottom:12px}
+.thanks .cta{display:inline-block;margin-top:14px;padding:15px 30px;background:var(--gold);color:var(--white);border-radius:999px;font-weight:600}
+.thanks .cta:hover{background:var(--navy)}
+.who{display:flex;gap:16px;align-items:center;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.who img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+.who p{font-size:14px;color:var(--ink-soft);line-height:1.55}
+footer{text-align:center;font-size:13px;color:var(--ink-soft);padding:0 16px 40px}
+footer a{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="/"><span class="logo">L</span>Luciano Mattioli</a>
+</div></nav>
+
+<header class="hero"><div class="hero-inner">
+  <p class="eyebrow">Una domanda · 30 secondi</p>
+  <h1>Da dove vuoi <em>ripartire?</em></h1>
+  <p>Dimmi cosa conta di più per te adesso. Ti mando gratis il primo capitolo di «Migliora la Tua Vita Adesso» e i consigli giusti per il tuo obiettivo.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="card">
+    <form id="lead" novalidate>
+      <p class="step">La tua risposta</p>
+      <p class="q" id="q-label">Cosa vorresti migliorare per primo nella tua vita?</p>
+
+      <fieldset class="options" role="radiogroup" aria-labelledby="q-label">
+        <div class="opt"><input type="radio" name="motivazione" id="m1" value="benessere"><label for="m1"><span class="ico">🌿</span><span class="t"><strong>Più energia e benessere</strong><span>Alimentazione, forma fisica, sentirmi meglio ogni giorno</span></span></label></div>
+        <div class="opt"><input type="radio" name="motivazione" id="m2" value="entrate"><label for="m2"><span class="ico">💼</span><span class="t"><strong>Un'entrata extra accanto al mio lavoro</strong><span>Costruire qualcosa di mio, un passo alla volta</span></span></label></div>
+        <div class="opt"><input type="radio" name="motivazione" id="m3" value="tempo"><label for="m3"><span class="ico">🏡</span><span class="t"><strong>Più tempo libero e per la famiglia</strong><span>Meno vincoli dal lavoro, più vita</span></span></label></div>
+        <div class="opt"><input type="radio" name="motivazione" id="m4" value="viaggi"><label for="m4"><span class="ico">✈️</span><span class="t"><strong>Viaggiare e vivere nuove esperienze</strong><span>Vedere il mondo invece di rimandare</span></span></label></div>
+        <div class="opt"><input type="radio" name="motivazione" id="m5" value="crescita"><label for="m5"><span class="ico">🌱</span><span class="t"><strong>Crescita personale, autostima e mindset</strong><span>Credere di più in me e smettere di bloccarmi</span></span></label></div>
+      </fieldset>
+
+      <div class="fields">
+        <div><label for="nome">Il tuo nome</label><input id="nome" name="nome" type="text" autocomplete="given-name" required></div>
+        <div><label for="email">La tua email (ti arriva lì il capitolo)</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="consent"><input type="checkbox" id="privacy" required><span>Ho letto la <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> e acconsento a ricevere via email il capitolo gratuito e i contenuti di Luciano Mattioli. Posso disiscrivermi in qualsiasi momento.</span></label>
+        <p class="err" id="err" role="alert"></p>
+        <button type="submit" id="btn">Inviami il capitolo gratuito →</button>
+      </div>
+      <p class="note">Niente spam. Solo contenuti utili per il tuo obiettivo.</p>
+    </form>
+
+    <div class="thanks" id="thanks" aria-live="polite">
+      <h2 id="t-title">Grazie! Controlla la tua email.</h2>
+      <p id="t-text">Tra qualche minuto ti arriva il primo capitolo.</p>
+      <p>Se vuoi parlarne di persona, la prima videocall di 30 minuti è gratuita e senza impegno.</p>
+      <a class="cta" id="t-cta" href="https://calendly.com/nutricoach365/30min" target="_blank" rel="noopener">Prenota la videocall gratuita →</a>
+    </div>
+
+    <div class="who">
+      <img src="https://nutricoach.life/assets/luciano.jpg" alt="Luciano Mattioli" width="56" height="56">
+      <p><strong style="color:var(--navy)">Luciano Mattioli</strong> — ex chef, Life Coach e autore di 4 libri di crescita personale. Da 25 anni accompagno chi vuole una vita più libera.</p>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 Luciano Mattioli · <a href="/privacy.html">Privacy</a> · <a href="/contatti.html">Contatti</a></footer>
+
+<script>
+/* ==== CONFIGURAZIONE ==== */
+// Incolla qui l'indirizzo del Webhook di Make (scenario "Lead YouTube → AWeber").
+const MAKE_WEBHOOK_URL = "INCOLLA_QUI_IL_WEBHOOK_DI_MAKE";
+// Se il webhook non è ancora impostato o non risponde, il contatto arriva comunque via email:
+const FALLBACK_EMAIL_URL = "https://formsubmit.co/ajax/nutricoach365@gmail.com";
+
+const ETICHETTE = {
+  benessere: "Più energia e benessere",
+  entrate:   "Un'entrata extra accanto al lavoro",
+  tempo:     "Più tempo libero e per la famiglia",
+  viaggi:    "Viaggiare e vivere nuove esperienze",
+  crescita:  "Crescita personale, autostima e mindset"
+};
+const GRAZIE = {
+  benessere: "Nel capitolo e nelle prossime email ti racconto da chef come ho cambiato il mio modo di nutrirmi e ritrovato energia.",
+  entrate:   "Nelle prossime email ti racconto come ho iniziato a costruire qualcosa di mio senza lasciare il lavoro, e quali errori evitare.",
+  tempo:     "Nelle prossime email ti racconto come sono passato dalle domeniche in cucina al tempo con la mia famiglia.",
+  viaggi:    "Nelle prossime email ti porto con me nei viaggi che prima rimandavo sempre, e ti racconto cosa è cambiato.",
+  crescita:  "Nel capitolo e nelle prossime email trovi gli esercizi che uso ogni giorno su mindset e fiducia in me stesso."
+};
+
+// Da quale video o canale arriva il contatto (?utm_source=youtube&utm_campaign=ID_VIDEO)
+const qs = new URLSearchParams(location.search);
+const origine = {
+  fonte:    qs.get("utm_source")   || (document.referrer.includes("youtube") ? "youtube" : "diretto"),
+  campagna: qs.get("utm_campaign") || "",
+  contenuto:qs.get("utm_content")  || ""
+};
+
+const form = document.getElementById("lead");
+const err  = document.getElementById("err");
+const btn  = document.getElementById("btn");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  err.textContent = "";
+  const mot   = form.querySelector('input[name="motivazione"]:checked');
+  const nome  = document.getElementById("nome").value.trim();
+  const email = document.getElementById("email").value.trim();
+  if (!mot)  { err.textContent = "Scegli una risposta qui sopra."; return; }
+  if (!nome) { err.textContent = "Scrivi il tuo nome."; return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { err.textContent = "Controlla l'indirizzo email."; return; }
+  if (!document.getElementById("privacy").checked) { err.textContent = "Serve il consenso per inviarti il capitolo."; return; }
+  if (form._honey.value) return; // bot
+
+  const dati = {
+    nome, email,
+    motivazione: mot.value,
+    motivazione_testo: ETICHETTE[mot.value],
+    tag_aweber: "mot-" + mot.value,
+    fonte: origine.fonte, campagna: origine.campagna, contenuto: origine.contenuto,
+    pagina: location.href, data: new Date().toISOString()
+  };
+
+  btn.disabled = true; btn.textContent = "Invio in corso…";
+  let ok = false;
+  if (MAKE_WEBHOOK_URL.startsWith("https://")) {
+    try {
+      const r = await fetch(MAKE_WEBHOOK_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(dati) });
+      ok = r.ok;
+    } catch (_) { ok = false; }
+  }
+  if (!ok) {
+    try {
+      const r = await fetch(FALLBACK_EMAIL_URL, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ ...dati, _subject: "Nuovo contatto (" + ETICHETTE[mot.value] + ") da nutricoach.life", _template: "table" }) });
+      ok = r.ok;
+    } catch (_) { ok = false; }
+  }
+  if (!ok) {
+    btn.disabled = false; btn.textContent = "Inviami il capitolo gratuito →";
+    err.textContent = "Qualcosa non ha funzionato. Riprova tra un attimo oppure scrivimi su WhatsApp.";
+    return;
+  }
+
+  document.getElementById("t-title").textContent = "Grazie " + nome + "! Controlla la tua email.";
+  document.getElementById("t-text").textContent = GRAZIE[mot.value];
+  const cal = new URL(document.getElementById("t-cta").href);
+  cal.searchParams.set("name", nome); cal.searchParams.set("email", email);
+  cal.searchParams.set("a1", ETICHETTE[mot.value]);
+  document.getElementById("t-cta").href = cal.toString();
+  form.style.display = "none";
+  document.getElementById("thanks").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+</body>
+</html>
